@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>selectie van covers</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body lang="nl">
+      <div class="wrapper">
+      <div class="cover">
+         <img class="img" src="covers/martingarrixwiee.jpg" alt="">
+         <article>
+            <h3>Martin Garrix</h3>
+            <h4>Wiee</h4>
+            <p>
+               Martin Garrix releases his first new track together with upcoming Dutch talent Mesto.
+               This track, with a “Forbidden Voices” flow and feeling, was the first in a list of 7 released during “Martin Garrix Week” of the Amsterdam Dance Event, starting the 15th of October 2016 until the 22th of October 2016.
+            </p>
+         </article>
+      </div>
+      <!-- einde van album -->
+      <div class="cover">
+      <img src="covers/martingarrixsofaraway.jpg">
+      <article>
+         <h3>Martin Garrix</h3>
+         <h4>So Far Away</h4>
+         <p>“So Far Away” is a song about a couple who love each other, but can never make their relationship work. The song is the sixth original song of 2017 by Dutch DJ Martin Garrix, and is co-produced by, and features, French DJ David Guetta. The track features vocals from English songwriter Jamie Scott, and Romy Dya, a Dutch female vocalist.
+         </p>
+      </article>
+    </div>
+    <!-- einde van album -->
+      <div class="cover">
+      <img src="covers/martingarrixhigh.jpg">
+      <article>
+         <h3>Martin Garrix</h3>
+         <h4>High On Life</h4>
+         <p>“High On Life” tells a story of living the fast life with either a friend or a lover, though the lyrics leave this open to interpretation. First publicly unveiled at his last Tomorrowland 2018 set for the festival’s second weekend and released shortly thereafter, the song was first announced in an Instagram post four days prior to the song’s release.
+         </p>
+      </article>
+    </div>
+    <!-- einde van album -->
+      <div class="cover">
+      <img src="covers/martingarrixburnout.jpg">
+      <article>
+         <h3>Martin Garrix</h3>
+         <h4>Burn Out</h4>
+         <p>"This song was first known as “Evolve”, when it was first premiered. Although release of song was hoped, Martin said it will never be released.
+         However at Tomorrowland 2018, he played the song alongside Justin Mylo on the STMPD RCRDS stage, with lyrics added- instead of a mash up between “Feel so close” by Calvin Harris."
+         </p>
+      </article>
+    </div>
+    <!-- einde van album -->
+      <div class="cover">
+      <img src="covers/martingarrixaccess.jpg">
+      <article>
+         <h3>Martin Garrix</h3>
+         <h4>Access</h4>
+         <p>“Access” marks the fourth release from Martin Garrix’s 2018 EP, BY LAW.
+
+         Though it was premiered at Ultra Music Festival 2017 in Miami, Access was actually previewed by Martin himself a month earlier through a YouTube live. He notes at the end that he “might change everything and just keep the melodies,” which ended up not being the case."
+         </p>
+      </article>
+    </div>
+    <!-- einde van album -->
+      <div class="cover">
+      <img src="covers/martingarrixlatency.jpg">
+      <article>
+         <h3>Martin Garrix</h3>
+         <h4>Latency</h4>
+         <p>“Latency has the distinct electric sound he has featured in his other tracks. Right from the start, this song bumps so well. It takes you on a journey to the drop, which contains a massive bassline. I can bet you the drop will be stuck in your head for the rest of the day. It contains those electric elements from other hits of his like Byte and Tremor.”
+         </p>
+      </article>
+    </div>
+    <script>let alleAlbums = document.querySelectorAll('.cover');
+    const naarBoven = (e) => {
+      e.target.classList.remove('naarBeneden');
+      e.target.classList.add('naarBoven');
+    }
+    const naarBeneden = (e) => {
+      e.target.classList.remove('naarBoven');
+      e.target.classList.add('naarBeneden');
+    }
+
+    for (let i = 0; i < alleAlbums.length; i++) {
+      let album = alleAlbums[i];
+      album.addEventListener('mouseenter', naarBoven);
+      album.addEventListener('mouseleave', naarBeneden);
+    }
+  </script>
+   </body>
+</html>

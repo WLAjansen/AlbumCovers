@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700');
+
+html {
+	font-family: Archivo Narrow;
+}
+html, body, div, article, p, ul, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+.cover {
+	width: 300px;
+	float: left;
+	margin: 1em;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	font-size: 19px;
+}
+.cover article {
+	position: relative;
+	margin-top: -300px;
+	background-color: rgba(255,255,255,0.5);
+	height: 300px;
+	font-size: .8em;
+	padding: 1.5em;
+	margin-top: 0;
+	transition: margin-top .8s;
+}
+
+.cover img {
+	height: 300px;
+	width: 300px;
+}
+
+.cover article h3, .cover article h4, .cover article p {
+	padding: 0.3em;
+
+}
+.naarBoven article {
+  animation: naar-boven 1s forwards;
+}
+
+.naarBeneden article {
+  animation: naar-beneden 1s forwards;
+}
+@-webkit-keyframes naar-boven{
+  10% {margin-top: 0;}
+  30% {margin-top: -150px;}
+  50% {margin-top: -225px;}
+  70% {margin-top: -270px;}
+  90% {margin-top: -290px;}
+  20%, 40%, 60%, 80%, 100%{margin-top: -308px;}
+}
+
+@-webkit-keyframes naar-beneden{
+  10% {margin-top: -308px;}
+  30% {margin-top:  -152px;}
+  50% {margin-top: -75px;}
+  70% {margin-top: -38px;}
+  90% {margin-top: -19px;}
+  20%, 40%, 60%, 80%, 100%{margin-top: 0px;}
+}
+ article:hover{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
