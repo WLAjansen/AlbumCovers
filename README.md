@@ -1,4 +1,4 @@
 # AlbumCovers
 
 
-http://26765.hosts2.ma-cloud.nl/bewijzenmap/fro/albumcovers/index.html
+http://26725.hosts2.ma-cloud.nl/bewijzenmap/periode1.3/pro1/albumcovers/
